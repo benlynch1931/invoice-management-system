@@ -9,5 +9,6 @@
         <sql>
             CREATE SCHEMA INV01MA
         </sql>
+        <createSequence sequenceName="hibernate_sequence" startValue="1000" incrementBy="50" />
     </changeSet>
 </databaseChangeLog>

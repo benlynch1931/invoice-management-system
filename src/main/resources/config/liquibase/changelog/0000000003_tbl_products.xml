@@ -6,21 +6,21 @@
                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
                    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd"
 >
-    <changeSet id="0000000001" author="BENLYNCH">
+    <changeSet id="0000000002" author="BENLYNCH">
         <sql>
-            CREATE TABLE SERVICE (
+            CREATE TABLE PRODUCT (
 
-            SERVICE_ID                  NUMBER
-            ,SERVICE_NAME               VARCHAR(100)
-            ,RATE                       NUMBER
-            ,PERIOD                     VARCHAR(30)
+            PRODUCT_ID                  NUMBER
+            ,PRODUCT_NAME               VARCHAR(100)
+            ,PRICE                      NUMBER
             ,ADD_VAT                    NUMBER
             ,PCT_VAT                    NUMBER
+
 
             ,CREATION_TIMESTAMP         TIMESTAMP WITH TIMEZONE
             ,LAST_UPDATED_TIMESTAMP     TIMESTAMP WITH TIMEZONE
 
-            ,CONSTRAINT "PK_SERVICE_ID" PRIMARY KEY (SERVICE_ID)
+            ,CONSTRAINT "PK_PRODUCT_ID" PRIMARY KEY (PRODUCT_ID)
 
             );
         </sql>
